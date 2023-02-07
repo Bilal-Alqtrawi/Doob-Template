@@ -1,0 +1,231 @@
+/* Start Container  */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+/* End Container  */
+
+/* Start Header */
+@media (max-width: 991px) {
+  header .menu {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  i.bar {
+    display: block;
+    font-size: 20px;
+  }
+  header nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    z-index: 100;
+    display: none;
+  }
+  header nav::before {
+    content: "";
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--bg-color) transparent transparent transparent;
+    position: absolute;
+    right: 0px;
+    top: -8px;
+  }
+  header nav li a {
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: rgba(31, 16, 16, 0.333);
+    padding-top: 20px;
+    color: white;
+    font-weight: 600;
+  }
+  header nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.474);
+  }
+  header .right-nav {
+    display: none !important;
+  }
+  header .menu:hover nav {
+    display: flex !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header .container {
+    flex-wrap: wrap;
+  }
+}
+/* End Header */
+
+/* Start Hero */
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .title > h1 {
+    font-size: 30px;
+  }
+  .hero .title > p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .hero .title > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .title > div > a {
+    font-size: 14px;
+  }
+  .hero .title > div > a:first-of-type {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .hero .illustration {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero .container {
+    gap: 60px;
+  }
+}
+/* End Hero */
+
+/* Start Service */
+@media (max-width: 991px) {
+  .services .container {
+    text-align: center;
+    row-gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services .title > h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .services .title > a {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .services .ser img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .services .container {
+    column-gap: 40px;
+  }
+}
+/* End Service */
+
+@media (max-width: 991px) {
+  .about .container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .info {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .about .info h2 {
+    font-size: 25px;
+  }
+  .about .info p {
+    font-size: 13px;
+    width: fit-content;
+  }
+  .about img {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio .title h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .blog .title span {
+    font-size: 13px;
+  }
+  .blog .title h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .blog .title > .arrows {
+    align-self: flex-start;
+  }
+  .blog .boxs {
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .blog .boxs {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 991px) {
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact .title {
+    text-align: center;
+  }
+  .contact .title span {
+    font-size: 13px;
+  }
+  .contact .title h2 {
+    font-size: 25px;
+  }
+  .contact .contact-form form textarea {
+    grid-column: span 1;
+  }
+}
+@media (max-width: 991px) {
+  footer .logo {
+    font-size: 13px;
+  }
+  footer h2 {
+    font-size: 25px;
+  }
+  footer .links {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  svg {
+    display: none;
+  }
+}
